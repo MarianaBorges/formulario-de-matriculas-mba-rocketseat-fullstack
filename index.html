@@ -52,6 +52,7 @@
                 <option value="male">Masculino</option>
                 <option value="na">Prefiro não responder</option>
               </select>
+              </div>
 
               <div class="textarea-wrapper">
                 <label for="medical-info">Informações médicas</label>
@@ -76,7 +77,6 @@
                   <p>Clique aqui para  selecionar arquivos</p>
               </div>
               </div>
-            </div>
           </fieldset>
           <fieldset class="address">
             <legend>Endereço residencial</legend>
@@ -107,6 +107,28 @@
                   <input type="text" id="state" name="state" value="SP" disabled>
                 </div>
               </div>
+          </fieldset>
+          <fieldset class="gardian">
+            <legend>Informações do responsavel</legend>
+
+            <div class="input-wrapper">
+              <label for="gardian">Nome do resonsável</label>
+              <input type="text" name="gardian" id="gardian">
+              <small>Principal responsável legal e contato de emergência</small>
+            </div>
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input type="tel" name="phone" id="phone" placeholder="(89) 9 9900-0000">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input type="tel" name="email" id="email" required>
+              <div class="error">
+                <img src="assets/icons/alert-circle.svg" alt="icone de alerta">
+                <span>Insira um email válido</span>
+              </div>
+            </div>
           </fieldset>
         </form>
       </div>
